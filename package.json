@@ -2,6 +2,7 @@
   "name": "huatai01",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "gsp-react": "^0.1.9",
