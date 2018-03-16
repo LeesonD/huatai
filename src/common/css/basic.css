@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ebf3f3;
+    font-family: "Microsoft Yahei", Helvetica;
+    font-size: 14px;
+    /**禁用默认文本选择**/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,8 @@
+.loanCalc .title { 
+    border-bottom: 1px solid #e2e2e2;
+    padding: 12px; 
+}
+
+.loanCalc .title span {
+    border-right: 5px solid #FDA907;
+}

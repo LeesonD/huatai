@@ -1,0 +1,10 @@
+.l{
+    float: left;
+   position: relative;
+   left:70px
+}
+.r{
+    float:left;
+    position: relative;
+    left: 140px
+}
