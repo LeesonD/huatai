@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from 'gsp-react-framework';
-import { Container, Content, Header, Footer, Button } from 'gsp-react';
+import { Container, Content, Header, Button } from 'gsp-react';
 import TotalInfoViewModel from "./totalInfo.viewmodel";
 
 export default class ToatlInfo extends Component {
