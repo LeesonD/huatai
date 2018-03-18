@@ -2,7 +2,11 @@ import { ViewModel } from 'gsp-react-framework';
 
 export default class DiscernViewModel extends ViewModel{
     goBack(){
-        this.props.history.goBack();
+        console.log("ggg");
+        this.props.history.push({
+            pathname:"/idcardPhoto"
+        });
+        
     }
     onTextChange(e) {
         let info = this.state.info;
@@ -12,6 +16,8 @@ export default class DiscernViewModel extends ViewModel{
         });
     }
     next(){
-        console.log("next");
+        this.props.history.push({
+            pathname:"/facePhoto"
+        })
     }
 }

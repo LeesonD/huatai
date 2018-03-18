@@ -7,6 +7,8 @@ export default class ResultViewModel extends ViewModel{
         })
     }
     goback(){
-        this.props.history.goBack();
+        this.props.history.push({
+            pathname:"/loanCalc"
+        });
     }
 }

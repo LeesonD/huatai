@@ -23,7 +23,7 @@ export default class Discern extends Component {
     render() {
         return (
             <Container>
-                <Header name="身份证信息" onLeftArrowClick={this.viewModel.goback}>
+                <Header name="身份证信息" onLeftArrowClick={this.viewModel.goBack}>
                 </Header>
                 <Content>
                     <Input label={"身份证号码"} name={"id"} text={this.state.info[0]["id"]} placeHolder={"请输入"} onChange={()=>this.viewModel.onTextChange} align={"left"} />

@@ -19,7 +19,7 @@ export default class loanApply extends React.Component {
                     <Header name="贷款申请" onLeftArrowClick={this.goBack.bind(this)} />
                     <Content>
                         <Button bstyle={"primary"} size="lg" text={"贷款试算"} col={6} onClick={this.buttonClick.bind(this)} />
-                        <Button bstyle={"primary"} size="lg" text={"贷款申请"} col={6} onClick={this.buttonClick.bind(this)} />
+                        <Button bstyle={"primary"} size="lg" text={"贷款申请"} col={6} onClick={this.apply.bind(this)} />
                     </Content>
                 </Container>
             </div>
@@ -37,6 +37,11 @@ export default class loanApply extends React.Component {
             pathname:"/",
             state:{}
         });
+    }
+    apply(){
+        this.props.history.push({
+            pathname:"/idcardPhoto"
+        })
     }
 }
 

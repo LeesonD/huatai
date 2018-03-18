@@ -3,9 +3,7 @@ import { ViewModel } from 'gsp-react-framework';
 
 export default class IDcardPhotoViewModel extends ViewModel {
     goBack() {
-        this.props.history.push({
-            pathname: "/result"
-        })
+        this.props.history.goBack();
     }
     takePhoto() {
         console.log("拍照片");
