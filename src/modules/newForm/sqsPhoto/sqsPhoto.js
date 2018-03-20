@@ -15,7 +15,7 @@ export default class SqsPhoto extends Component {
                 <Content >
                     <div className="card" style={{ margin: "20 20 20 20" }}  >
                         <div className="card-text" style={{ textalign: "center", margin: "20px 20px 20px 20px" }}>请拍摄授权书全图，保持光纤充足</div>
-                        <img className="card-img-top" src={require("../../images/sqsPhoto1.png")} alt="手持授权书拍照" />
+                        <img id="sqsPhoto" className="card-img-top" src={require("../../images/sqsPhoto1.png")} alt="手持授权书拍照" />
                         <button className="btn btn-primary" onClick={() => this.viewModel.takePhoto()}>拍摄</button>
                         <p/>
                         <button className="btn btn-secondary" onClick={() => this.viewModel.next()}>下一步</button>

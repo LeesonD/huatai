@@ -15,8 +15,9 @@ export default class FacePhoto extends Component {
                 <Content >
                     <div className="card" style={{ margin: "20 20 20 20" }}  >
                         <div className="card-text" style={{ textalign: "center", margin: "20px 20px 20px 20px" }}>请客户手持授权书，进行拍摄</div>
-                        <img className="card-img-top" src={require("../../images/sqsPhoto1.png")} alt="手持授权书拍照" />
+                        <img id="facePhoto" className="card-img-top" src={require("../../images/sqsPhoto1.png")} alt="手持授权书拍照" />
                         <button className="btn btn-primary" onClick={() => this.viewModel.takePhoto()}>拍摄识别</button>
+                        <button className="btn btn-block btn-lg" onClick={()=>this.viewModel.next()}>下一步</button>
                     </div>
                 </Content >
             </Container>
