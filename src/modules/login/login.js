@@ -19,7 +19,7 @@ export default class Login extends React.Component {
                 <Text title="账号"/>
                 <Text title="密码"/>
                 <Text title="验证码"/>
-                <button><Link to="/loanApply">登录</Link></button>
+                <button><Link to="/homePage">登录</Link></button>
             </form >
         );
     }

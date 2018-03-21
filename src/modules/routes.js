@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import PageTransition from "react-router-page-transition";
 import login from "./login/login";
+//贷款申请导入
 import loanApply from "./loanApply/loanApply";
 import loanCalc from "./loanApply/loanCalc/loanCalc";
 import result from "./loanApply/result/result";
@@ -13,6 +14,10 @@ import totalInfo from "./newForm/totalInfo/totalInfo";
 import jxsInfo from "./newForm/totalInfo/jxsInfo/jxsInfo";
 import loanInfo from "./newForm/totalInfo/loanInfo/loanInfo";
 // import submitForm from "./newForm/submitForm/submitForm";
+//主页及其他导入
+import homePage from "./homePage/homePage";
+import fkApplyHome from "./fkApply/fkApplyHome/fkApplyHome";
+import fksq from "./fkApply/fksq/fksq";
 
 export default class Routes extends React.Component {
     render() {
@@ -22,6 +27,7 @@ export default class Routes extends React.Component {
                     render={({ location }) => (
                         <PageTransition timeout={500}>
                             <Switch location={location}>
+                                {/* <Route exact path="/" component={} /> */}
                                 <Route exact path="/" component={login} />
                                 <Route path="/loanApply" component={loanApply} />
                                 <Route path="/loanCalc" component={loanCalc} />
@@ -34,6 +40,9 @@ export default class Routes extends React.Component {
                                 <Route path="/jxsInfo" component={jxsInfo} />
                                 <Route path="/loanInfo" component={loanInfo} />
                                 {/* <Route path="/submitForm" component={submitForm} /> */}
+                                <Route path="/homePage" component={homePage} />
+                                <Route exact path="/fkApplyHome" component={fkApplyHome} />
+                                <Route exact path="/fksq" component={fksq} />
                             </Switch>
                         </PageTransition>
                     )}

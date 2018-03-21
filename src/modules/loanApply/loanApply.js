@@ -34,7 +34,7 @@ export default class loanApply extends React.Component {
     }
     goBack() {
         this.props.history.push({
-            pathname:"/",
+            pathname:"/homePage",
             state:{}
         });
     }
