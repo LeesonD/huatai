@@ -1,0 +1,6 @@
+.lhtPhoto{
+    height:"100px"; 
+    position: fixed;
+    left: 50%;
+    margin-left: -50px;
+}

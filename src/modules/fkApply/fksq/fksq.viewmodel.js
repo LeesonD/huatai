@@ -22,7 +22,9 @@ export default class FksqViewModel extends ViewModel {
         console.log("Tab clicked..." + state.selected + " " + index);
     }
     cardClick(){
-        console.log("CardClick");
+        this.props.history.push({
+            pathname:"/fapiaoChoose"
+        })
     }
     showModal(index) {
         index.stopPropagation(); //重要！

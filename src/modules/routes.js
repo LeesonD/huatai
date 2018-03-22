@@ -18,6 +18,16 @@ import loanInfo from "./newForm/totalInfo/loanInfo/loanInfo";
 import homePage from "./homePage/homePage";
 import fkApplyHome from "./fkApply/fkApplyHome/fkApplyHome";
 import fksq from "./fkApply/fksq/fksq";
+import fapiaoChoose from "./fkApply/fksq/fksqForm/fapiao/fapiaoChoose/fapiaoChoose";
+import fapiaoPhoto from "./fkApply/fksq/fksqForm/fapiao/fapiaoPhoto/fapiaoPhoto";
+import fapiaoInfo from "./fkApply/fksq/fksqForm/fapiao/fapiaoInfo/fapiaoInfo";
+import mianqianVideo from "./fkApply/fksq/fksqForm/mianqianViedo/mianqianVideo";
+import loanHetongPhoto from "./fkApply/fksq/fksqForm/loanHetong/loanHetongPhoto/loanHetongPhoto";
+import loanHetongInfo from "./fkApply/fksq/fksqForm/loanHetong/loanHetongInfo/loanHetongInfo";
+import fkTotalInfo from "./fkApply/fksq/fksqForm/totalInfo/fkTotalInfo";
+import carInfoEntering from "./fkApply/fksq/fksqForm/carInfoEntering/carInfoEntering";
+import fkgzList from "./fkApply/fkgz/fkgzList";
+import fkgzddxq from "./fkApply/fkgz/fkgzddxq/fkgzddxq"
 
 export default class Routes extends React.Component {
     render() {
@@ -43,6 +53,16 @@ export default class Routes extends React.Component {
                                 <Route path="/homePage" component={homePage} />
                                 <Route exact path="/fkApplyHome" component={fkApplyHome} />
                                 <Route exact path="/fksq" component={fksq} />
+                                <Route exact path="/fapiaoChoose" component={fapiaoChoose} />
+                                <Route exact path="/fapiaoPhoto" component={fapiaoPhoto} />
+                                <Route exact path="/fapiaoInfo" component={fapiaoInfo} />
+                                <Route exact path="/mianqianVideo" component={mianqianVideo} />
+                                <Route exact path="/loanHetongPhoto" component={loanHetongPhoto} />
+                                <Route exact path="/loanHetongInfo" component={loanHetongInfo} />
+                                <Route exact path="/fkTotalInfo" component={fkTotalInfo} />
+                                <Route exact path="/carInfoEntering" component={carInfoEntering} />
+                                <Route exact path="/fkgzList" component={fkgzList} />
+                                <Route exact path="/fkgzddxq" component={fkgzddxq} />
                             </Switch>
                         </PageTransition>
                     )}

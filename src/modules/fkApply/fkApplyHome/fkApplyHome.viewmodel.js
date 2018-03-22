@@ -12,8 +12,9 @@ export default class FkApplyHomeViewModel extends ViewModel {
         })
     }
     fkgz() {
-        alert("放款跟踪");
-        console.log("放款跟踪");
+        this.props.history.push({
+            pathname: "/fkgzList"
+        })
     }
     fkthj() {
         alert("放款退回件");

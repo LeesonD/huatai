@@ -20,9 +20,6 @@ export default class LoanInfoViewModel extends ViewModel {
                 { text: '确定', onPress: () => this.callback() },
             ]
         )
-        // this.props.history.push({
-        //     pathname: "/submitForm"
-        // });
     }
     callback() {
         this.props.history.push({

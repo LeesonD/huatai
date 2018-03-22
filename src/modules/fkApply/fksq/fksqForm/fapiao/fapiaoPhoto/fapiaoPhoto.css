@@ -1,0 +1,12 @@
+#d1{
+    position: fixed;
+    left: 50%;
+    margin-left: -120px;
+}
+ #fapiaoPhoto{
+     position: absolute;
+    left: 50%;
+    margin-left: -70px; 
+    /* text-align: center;
+    margin: 0 auto; */
+ } 

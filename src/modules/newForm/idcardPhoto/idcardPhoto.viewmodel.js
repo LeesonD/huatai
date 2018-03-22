@@ -41,7 +41,9 @@ export default class IDcardPhotoViewModel extends ViewModel {
     };
 
     goBack() {
-        this.props.history.goBack();
+        this.props.history.push({
+            pathname:"/loanApply"
+        })
     }
     takePhoto() {
         console.log("拍照片");
