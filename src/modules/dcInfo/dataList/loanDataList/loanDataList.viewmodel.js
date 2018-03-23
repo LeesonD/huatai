@@ -9,6 +9,9 @@ export default class LoanDataListViewModel extends ViewModel {
     itemClick() {
         window.imp.iCamera.select(this.option, this.success, this.failed);
         console.log("itemClick")
+        this.props.history.push({
+            pathname: "/photoList"
+        })
     }
     option = {
         quality: 90, //图片质量
@@ -20,9 +23,7 @@ export default class LoanDataListViewModel extends ViewModel {
         console.log("选照成功")
         var element = document.getElementById("photo_list_pic1");
         element.src = "data:image/jpg;base64," + info.thumbnailData + "";
-        this.props.history.push({
-            pathname: "/photoList"
-        })
+
     }
     failed = function (info) {
         alert(info);

@@ -20,7 +20,7 @@ export default class FkgzddxqViewModel extends ViewModel {
     }
     bczl() {
         this.props.history.push({
-            pathname: "/"
+            pathname: "/loanDataList"
         });
     }
 }
