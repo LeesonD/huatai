@@ -1,12 +1,14 @@
 import { ViewModel } from 'gsp-react-framework';
 
-export default class OrderTypeViewModel extends ViewModel{
-	goback(){
+export default class OrderTypeViewModel extends ViewModel {
+    goback() {
         this.props.history.push({
-            pathname:"/homePage"
+            pathname: "/homePage"
         })
     }
-    dkdd(){
-        
+    dkdd() {
+        this.props.history.push({
+            pathname: "/loanOrderList"
+        })
     }
 }

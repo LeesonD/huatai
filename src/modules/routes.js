@@ -29,6 +29,9 @@ import carInfoEntering from "./fkApply/fksq/fksqForm/carInfoEntering/carInfoEnte
 import fkgzList from "./fkApply/fkgz/fkgzList";
 import fkgzddxq from "./fkApply/fkgz/fkgzddxq/fkgzddxq";
 import orderType from "./dcInfo/orderType/orderType";
+import loanOrderList from "./dcInfo/orderList/loanOrderList/loanOrderList";
+import loanDataList from "./dcInfo/dataList/loanDataList/loanDataList";
+import photoList from "./dcInfo/dataList/photoList/photoList";
 
 export default class Routes extends React.Component {
     render() {
@@ -38,7 +41,7 @@ export default class Routes extends React.Component {
                     render={({ location }) => (
                         <PageTransition timeout={500}>
                             <Switch location={location}>
-                                {/* <Route exact path="/" component={} /> */}
+                                {/* <Route path="/" component={} /> */}
                                 <Route exact path="/" component={login} />
                                 <Route path="/loanApply" component={loanApply} />
                                 <Route path="/loanCalc" component={loanCalc} />
@@ -52,19 +55,22 @@ export default class Routes extends React.Component {
                                 <Route path="/loanInfo" component={loanInfo} />
                                 {/* <Route path="/submitForm" component={submitForm} /> */}
                                 <Route path="/homePage" component={homePage} />
-                                <Route exact path="/fkApplyHome" component={fkApplyHome} />
-                                <Route exact path="/fksq" component={fksq} />
-                                <Route exact path="/fapiaoChoose" component={fapiaoChoose} />
-                                <Route exact path="/fapiaoPhoto" component={fapiaoPhoto} />
-                                <Route exact path="/fapiaoInfo" component={fapiaoInfo} />
-                                <Route exact path="/mianqianVideo" component={mianqianVideo} />
-                                <Route exact path="/loanHetongPhoto" component={loanHetongPhoto} />
-                                <Route exact path="/loanHetongInfo" component={loanHetongInfo} />
-                                <Route exact path="/fkTotalInfo" component={fkTotalInfo} />
-                                <Route exact path="/carInfoEntering" component={carInfoEntering} />
-                                <Route exact path="/fkgzList" component={fkgzList} />
-                                <Route exact path="/fkgzddxq" component={fkgzddxq} />
-                                <Route exact path="/orderType" component={orderType} />
+                                <Route path="/fkApplyHome" component={fkApplyHome} />
+                                <Route path="/fksq" component={fksq} />
+                                <Route path="/fapiaoChoose" component={fapiaoChoose} />
+                                <Route path="/fapiaoPhoto" component={fapiaoPhoto} />
+                                <Route path="/fapiaoInfo" component={fapiaoInfo} />
+                                <Route path="/mianqianVideo" component={mianqianVideo} />
+                                <Route path="/loanHetongPhoto" component={loanHetongPhoto} />
+                                <Route path="/loanHetongInfo" component={loanHetongInfo} />
+                                <Route path="/fkTotalInfo" component={fkTotalInfo} />
+                                <Route path="/carInfoEntering" component={carInfoEntering} />
+                                <Route path="/fkgzList" component={fkgzList} />
+                                <Route path="/fkgzddxq" component={fkgzddxq} />
+                                <Route path="/orderType" component={orderType} />
+                                <Route path="/loanOrderList" component={loanOrderList} />
+                                <Route path="/loanDataList" component={loanDataList} />
+                                <Route path="/photoList" component={photoList} />
                             </Switch>
                         </PageTransition>
                     )}
