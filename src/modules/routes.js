@@ -27,7 +27,8 @@ import loanHetongInfo from "./fkApply/fksq/fksqForm/loanHetong/loanHetongInfo/lo
 import fkTotalInfo from "./fkApply/fksq/fksqForm/totalInfo/fkTotalInfo";
 import carInfoEntering from "./fkApply/fksq/fksqForm/carInfoEntering/carInfoEntering";
 import fkgzList from "./fkApply/fkgz/fkgzList";
-import fkgzddxq from "./fkApply/fkgz/fkgzddxq/fkgzddxq"
+import fkgzddxq from "./fkApply/fkgz/fkgzddxq/fkgzddxq";
+import orderType from "./dcInfo/orderType/orderType";
 
 export default class Routes extends React.Component {
     render() {
@@ -63,6 +64,7 @@ export default class Routes extends React.Component {
                                 <Route exact path="/carInfoEntering" component={carInfoEntering} />
                                 <Route exact path="/fkgzList" component={fkgzList} />
                                 <Route exact path="/fkgzddxq" component={fkgzddxq} />
+                                <Route exact path="/orderType" component={orderType} />
                             </Switch>
                         </PageTransition>
                     )}

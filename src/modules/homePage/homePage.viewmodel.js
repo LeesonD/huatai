@@ -13,7 +13,9 @@ export default class HomePageViewModel extends ViewModel{
         });
     }
     dczl(){
-        console.log("代充资料");
+        this.props.history.push({
+            pathname:"/orderType"
+        });
     }
     dhgl(){
         console.log("贷后管理");

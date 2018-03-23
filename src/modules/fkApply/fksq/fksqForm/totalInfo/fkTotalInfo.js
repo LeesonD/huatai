@@ -2,7 +2,6 @@ import React from 'react';
 import { Component } from 'gsp-react-framework';
 import { Container, Content, Header, Button, Listview, Footer } from 'gsp-react';
 import FkTotalInfoViewModel from "./fkTotalInfo.viewmodel";
-import "./fkTotalInfo.css"
 
 export default class FkTotalInfo extends Component {
     constructor(props) {
@@ -15,7 +14,7 @@ export default class FkTotalInfo extends Component {
                 <Header name="全貌展示" onLeftArrowClick={this.viewModel.goback}></Header>
                 <Content>
                     <br />
-                    <div className="d1">车辆信息</div>
+                    <div>车辆信息</div>
                     <Listview text={"合同编号"}>
                         <input type="text" value={""} placeholder={"合同编号"} style={{ width: '100%' }} />
                     </Listview>
@@ -50,7 +49,7 @@ export default class FkTotalInfo extends Component {
                         <input type="text" value={""} placeholder={"期限"} style={{ width: '100%' }} />
                     </Listview>
                     <br />
-                    <div className="d1">银行卡信息</div>
+                    <div>银行卡信息</div>
                     <Listview text={"持卡人姓名"}>
                         <input type="text" value={""} placeholder={"持卡人姓名"} style={{ width: '100%' }} />
                     </Listview>
